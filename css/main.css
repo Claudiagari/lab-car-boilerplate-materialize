@@ -1,0 +1,289 @@
+/* Los estilos de tu proyecto */
+/* Clases Generales*/
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Clases para header*/
+.nav-wrapper {
+    background-color:#ffff;
+    padding: 0 40px; 
+}
+.nav-wrapper a {
+    color: #000;
+}
+/*Clases para zona de Hero*/
+.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.full{
+    background: url(../assets/images/taxi.jpg) no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    max-width: 100%;
+    background-position:bottom;
+}
+.section-2{
+    background: #f7b617;
+    padding: 40px  0 40px 40px;
+    color: #ffff;
+}
+/*Movile*/
+.movile-hero{
+    padding: 15px;
+}
+.movile-hero h5 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.movile-hero h5 img {
+    width: 60px;
+}
+.movile-hero .btn{
+    color: #000;
+}
+.desktop-hero{
+    display: none;
+}
+/*Desktop*/
+@media(min-width:768px){
+.full{
+    height:85vh ;
+    margin-bottom: 0px;
+}
+.desktop-hero{
+    display: block;
+    padding: 20px 30px;
+}
+.movile-hero{
+    display: none;
+}
+.desktop-hero h3{
+    font-size: 3.75rem;
+}
+.desktop-hero p {
+    font-size: 2.75rem;
+    font-weight: 500;
+    margin: 15px 0;
+}
+.desktop-hero p img {
+    width: 80px;
+}
+.desktop-hero .btn {
+    font-size: 1.5em;
+    color: #000;
+}
+.desktop-hero hr {
+ display:inline-block;
+ width: 25%;
+ text-align: center;
+ position: relative;
+ top: 10px;
+ background: #fff;
+ border: 1px solid #fff;
+}
+.desktop-hero .line{
+    text-align: center;
+    margin-bottom:30px;
+}
+.desktop-hero span{
+    margin: 0 50px
+}
+}
+/*Clases para zona phone*/
+.section-3{
+    background: #f7b617;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*Movile*/
+.phone-movile div{
+    margin: 30px 10px;
+    text-align: center;
+    border: 1px solid #ffff;
+    padding:15px;
+}
+.phone-movile h6{
+    margin-left: 15px;
+}
+.phone-desktop{
+    display:none;
+}
+/*Desktop*/
+@media(min-width:768px){
+.section-3 .l12{
+    padding-left: 0px;
+}
+.phone-desktop{
+    display:block;
+    margin: 30px 0;
+    border: 1px solid #ffff;
+    border-left-width: 0px;
+    padding: 15px;
+}
+.section-3{
+    padding-left: 0px;
+}
+.phone-movile{
+    display: none;
+}
+}
+/*Clases para zona drive*/
+.btn-warning{
+    background: #f7b617;
+    font-size:  0.6rem; 
+}
+.section-4{
+    background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0,.5)), url(../assets/images/conduce.jpg);
+    background-size: cover;
+    height: 50vh;
+    max-width: 100%;
+    color: #ffff;
+    padding: 60px 30px;
+}
+@media(min-width:768px){
+    .section-4{
+        background: url(../assets/images/conduce.jpg)no-repeat center center;
+        background-size: cover;
+        padding-right:0;
+        padding-top: 0;
+    }
+    .section-4 .row{
+        margin-right:0;
+    }
+    .section-4 .l5{
+        background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0,.5));
+        padding: 5rem 3rem ;
+    }
+}
+/*Clases para section search*/
+.section-5, .section-5 .form-control , .section-5 input::-webkit-input-placeholder{
+    background: #f7b617; 
+    color:#ffff ;
+}
+.section-5 .form-control{
+    border: 1px solid #ffff;
+}
+.section-5 a {
+    color: #000;
+}
+.section-5 .row {
+    padding-bottom: 15px;
+}
+.row{
+    margin-bottom:0px;
+}
+iframe {
+    width:100%; 
+    height:100%;
+    border: 1px solid #ffff; 
+    padding:10px;
+}
+@media(min-width:768px){
+    .section-5 .consult {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        height: 50vh; 
+        margin-top: 25px;
+    }
+    .consult h3,.consult p {
+        text-align: center;
+    }
+    iframe {
+        margin-top: 25px;
+        height:50vh;
+    }
+    .row{
+        margin-bottom:0px;
+    }
+}
+/*Classes para el footer*/
+.footer{
+    background:#3b434f;
+    color: #ffff;
+}
+.marginlist{
+    padding-top: 5px;
+    margin-left:10px;
+    
+}
+.centerlist{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 10px;
+}
+.centerlist .col-xs-6{
+    padding: 0;
+}
+.centerlistdk{
+    display:flex;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 10px;
+}
+.footer ul li a{
+    color:#fff;
+    padding: 15px 10px;
+}
+.footer ul i{
+    color: #fff;
+    padding: 5px;
+}
+.footer .nav>li>a:focus, .nav>li>a:hover {
+    background-color: rgb(14, 13, 13);
+    opacity:0.7 ;
+}
+.listunder {
+   flex-direction:row;
+   align-self: flex-end;
+}
+/*Clases para modal-1*/
+.first{
+    background: #18bc9c;
+}
+.user img {
+   width:250px;
+   height:250px;
+}
+.body-user .row div{
+    padding:15px 0 0 0;
+    background: #f7f7f7;
+}
+.body-user .row:last-child a {
+    color: rgb(133, 25, 25);
+}
+/*Clases para modal-2*/
+.register{
+    background:#a8a3a3; 
+}
+.second{
+    border-bottom-width: 0;
+}
+.account {
+    background-color: #000;
+    color: #ffff;
+}
+.account:hover, .account:focus, .account:active{
+    background-color:#000;
+    color: rgb(248, 247, 247);
+}
+.form-group input,.form-group button {
+    margin-bottom: 15px;
+}
+/*Clases para modal-3*/
+.third {
+    background:#a8a3a3;
+    border: 0;
+} 
+.third h4{
+    margin-top:20px;
+}
+.third div:nth-child(2){
+    padding:0px 30px;
+}
