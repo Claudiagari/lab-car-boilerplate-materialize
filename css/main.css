@@ -247,34 +247,63 @@ iframe {
 .first{
     background: #18bc9c;
 }
+.first .l1{
+    padding-right: 0px;
+}
+/* label color */
+.input-field label {
+    color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+border-bottom: 1px solid #000;
+box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+border-bottom: 1px solid #000;
+box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+border-bottom: 1px solid #000;
+box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+color: #000;
+}
 .user img {
-   width:250px;
-   height:250px;
+   width:150px;
+   height:150px;
 }
-.body-user .row div{
-    padding:15px 0 0 0;
+.body-user {
     background: #f7f7f7;
+    color: #000;
+    line-height: 35px;
 }
-.body-user .row:last-child a {
+.body-user a strong {
     color: rgb(133, 25, 25);
+}
+.body-user:first-child {
+    padding-top: 10px;
+}
+.body-user i{
+    color:#000;
 }
 /*Clases para modal-2*/
 .register{
     background:#a8a3a3; 
 }
-.second{
-    border-bottom-width: 0;
-}
-.account {
-    background-color: #000;
-    color: #ffff;
-}
-.account:hover, .account:focus, .account:active{
-    background-color:#000;
-    color: rgb(248, 247, 247);
-}
-.form-group input,.form-group button {
+.register .browser-default {
     margin-bottom: 15px;
+}
+.register .l1 {
+    padding-right: 0px;
 }
 /*Clases para modal-3*/
 .third {
@@ -286,4 +315,10 @@ iframe {
 }
 .third div:nth-child(2){
     padding:0px 30px;
+}
+.third a {
+    margin-top:30px;
+}
+.third .l1{
+    padding-right: 0px;
 }
